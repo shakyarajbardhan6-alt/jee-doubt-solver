@@ -246,7 +246,7 @@
   <span class="badge">Powered by Groq</span>
 </header>
 
-<div class="api-bar">
+<div class="api-bar" style="display:none">
   <label>Groq API Key:</label>
   <input type="password" id="apikey" placeholder="gsk_xxxxxxxxxxxxxxxxxxxx  (console.groq.com se lein)" />
   <button class="save-btn" onclick="saveKey()">Save</button>
@@ -284,7 +284,7 @@
 <script>
   let subject = 'all';
   let isLoading = false;
-  let groqKey = '';
+  let groqKey = 'gsk_12wuhb';
   const history = [];
 
   const SYSTEM = `You are an expert JEE (Joint Entrance Examination) tutor for Indian students preparing for JEE Main and JEE Advanced.
@@ -412,9 +412,7 @@ Subject focus: {SUBJECT}`;
   }
 
   // Welcome
-  addMsg('ai', `<strong>Namaste! 👋 JEE Doubt Solver mein aapka swagat hai!</strong><br><br>
-Upar apni <strong>Groq API key</strong> daalo aur Save karo — phir Physics, Chemistry ya Maths ka koi bhi doubt poocho.<br><br>
-<span style="opacity:0.6;font-size:13px">Free API key milti hai: console.groq.com</span>`);
+  addMsg('ai', `<strong>Namaste! 👋 JEE Doubt Solver ready hai!</strong><br><br>Physics, Chemistry ya Maths ka koi bhi doubt poocho — main step-by-step samjhaunga! 🎯`);
 </script>
 </body>
 </html>
